@@ -1,0 +1,25 @@
+@import '../../styles/crib_ui/crib_button/crib-btn_golbal.less';
+@import '../../styles/crib_ui/crib_button/crib-btn_default.less';
+@import '../../styles/crib_ui/crib_button/crib-btn_primary.less';
+@import '../../styles/crib_ui/crib_button/crib-btn_warn.less';
+@import '../../styles/crib_ui/crib_button/crib-btn_plain.less';
+@import '../../styles/crib_ui/crib_button/crib-btn_disabled.less';
+@import '../../styles/crib_ui/crib_button/crib-btn_mini.less';
+button{
+  &.crib-btn {
+    width: 100%;
+    border-width: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    &:focus {
+      outline: 0;
+    }
+  }
+  &.crib-btn_inline,&.crib-btn_mini {
+    width: auto;
+  }
+  &.crib-btn_plain-primary,&.crib-btn_plain-default,&.crib-btn_plain-warn{
+    border-width: 1px;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,32 @@
+/*
+* 遮罩动画
+*/
+.crib-mask-enter, .crib-mask-leave-active {
+  opacity: 0;
+}
+.crib-mask-leave-active, .crib-mask-enter-active {
+  transition: opacity 300ms;
+}
+
+
+
+/*
+ dialog框动画
+*/
+.crib-dialog-enter-active, .crib-dialog-leave-active {
+  opacity: 1;
+  transition-duration: 400ms;
+  transform: translate(-50%, -50%) scale(1)!important;
+  transition-property: transform, opacity!important;
+}
+.crib-dialog-leave-active {
+  transition-duration: 300ms;
+}
+.crib-dialog-enter {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.185)!important;
+}
+.crib-dialog-leave-active {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.85)!important;
+}

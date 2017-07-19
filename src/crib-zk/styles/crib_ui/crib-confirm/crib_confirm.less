@@ -1,0 +1,65 @@
+@import '../base/common.less';
+@import '../mixin/setBorderLine.less';
+@import '../mixin/mobile_rest.less';
+.crib-confirm_hd{
+    padding:1.3em @cirbConfirmWidth .5em;
+}
+
+.crib-confirm_title {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.crib-confirm_bd {
+    padding: 0  @cirbConfirmWidth .8em;
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: @cribConfrimBdfontColor;
+    &:first-child{
+        padding:2.7em 20px 1.7em;
+        color:#353535;
+    }
+}
+
+.crib-confirm_ft {
+    position: relative;
+    line-height: 48px;
+    font-size: 18px;
+    display: flex;
+    &:after {
+        content: " ";
+        .setTopLine(@cribConfirmLineColor);
+    }
+}
+
+.crib-confirm_btn {
+    display: block;
+    flex: 1;
+    color: @cribConfirmLinkColor;
+    text-decoration: none;
+    .setTapColor();
+    &:active {
+        background-color: @cribConfirmLinkActiveBc;
+    }
+
+    position: relative;
+    &:after {
+        content: " ";
+        .setLeftLine(@cribConfirmLineColor);
+    }
+    &:first-child {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.crib-confirm_btn_default {
+    color: @confirm-button-text-default-color;
+}
+.crib-confirm_btn_primary {
+    color: @confirm-button-text-primary-color;
+}
